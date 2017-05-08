@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    android:key="screen_list"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="Screen resolution"
+   >
+    <ListPreference
+        android:key="daydreamListPreference"
+        android:title="互动屏保"
+        android:summary="时钟"
+        android:entries="@array/daydream_entries"
+        android:entryValues="@array/daydream_values"
+        android:dialogTitle="互动屏保"
+        android:defaultValue="时钟"
+        >
+    </ListPreference>
+    <ListPreference
+        android:key="sleep_timeout_daydreamListPreference"
+        android:title="何时启动互动屏保"
+        android:summary="闲置null后"
+        android:entries="@array/sleep_timeout_entries"
+        android:entryValues="@array/sleep_timeout_values"
+        android:dialogTitle="何时启动互动屏保"
+        android:defaultValue="1800000"
+        >
+    </ListPreference>
+    <ListPreference
+        android:key="screen_sleepListPreference"
+        android:title="何时休眠"
+        android:summary="永不"
+        android:entries="@array/screen_off_timeout_entries"
+        android:entryValues="@array/screen_off_timeout_values"
+        android:dialogTitle="何时休眠"
+        android:defaultValue="-1"
+        >
+    </ListPreference>
+    <Preference
+        android:key="daydream_start_now"
+        android:title="现在启动">
+    </Preference>
+</PreferenceScreen> 
