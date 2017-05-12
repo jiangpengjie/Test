@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal">
+    
+	<com.ost.jay.settings.widget.FocusScrollListView
+        android:id="@+id/language_listview"
+        android:layout_width="900dp"
+        android:layout_height="600dp"
+        android:listSelector="@drawable/transparent"
+        android:dividerHeight="1dp"
+	    android:divider="@drawable/line_divide_sub_item"
+	    android:layout_marginTop="10dp"
+	    android:scrollbars="none"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp"
+        android:nextFocusDown="@id/language_listview">
+    </com.ost.jay.settings.widget.FocusScrollListView>
+    
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    android:key="screen_list"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+   >
+    <ListPreference
+            android:key="hdrListPreference"
+            android:title="HDR选项"
+            android:entries="@array/hdr_entries"
+            android:entryValues="@array/hdr_values"
+            android:defaultValue="自动"
+            >
+    </ListPreference>
+
+</PreferenceScreen> 

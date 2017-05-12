@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/bg"
+    tools:context="com.ost.jay.settings.main.MainActivity">
+
+
+    <ImageButton
+        android:id="@+id/setting_net"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:focusable="true"
+        android:scaleType="fitCenter"
+        android:background="@drawable/sel_main_focus"
+        android:src="@drawable/setting_net"/>
+
+    <ImageButton
+        android:id="@+id/setting_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@id/setting_net"
+        android:focusable="true"
+        android:scaleType="fitCenter"
+        android:background="@drawable/sel_main_focus"
+        android:src="@drawable/setting_more"/>
+
+    <ImageButton
+        android:id="@+id/setting_net_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@id/setting_more"
+        android:focusable="true"
+        android:scaleType="fitCenter"
+        android:background="@drawable/sel_main_focus"
+        android:src="@drawable/setting_net_speed"/>
+
+    <ImageButton
+        android:id="@+id/setting_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setting_more"
+        android:focusable="true"
+        android:scaleType="fitCenter"
+        android:background="@drawable/sel_main_focus"
+        android:src="@drawable/setting_update"/>
+
+    <ImageButton
+        android:id="@+id/setting_file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setting_net"
+        android:layout_toRightOf="@id/setting_update"
+        android:focusable="true"
+        android:scaleType="fitCenter"
+        android:background="@drawable/sel_main_focus"
+        android:src="@drawable/setting_file"/>
+
+    <ImageButton
+        android:id="@+id/setting_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setting_net"
+        android:layout_toRightOf="@id/setting_file"
+        android:focusable="true"
+        android:scaleType="fitCenter"
+        android:background="@drawable/sel_main_focus"
+        android:src="@drawable/setting_about"/>
+
+</RelativeLayout>
