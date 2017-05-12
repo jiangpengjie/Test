@@ -227,6 +227,7 @@ public class WifiActivity extends Activity implements View.OnClickListener,OnIte
         filter.addAction(ConnectivityManager.CONNECTIVITY_ACTION);
         registerReceiver(mBroadcastReceiver, filter);
 
+
     }
 
     public void SetScanResult(){
@@ -336,6 +337,7 @@ public class WifiActivity extends Activity implements View.OnClickListener,OnIte
         WifiInfo wifiInfo = mWifi.getConnectionInfo();
         return wifiInfo.getSSID();
     }
+
 
 
 

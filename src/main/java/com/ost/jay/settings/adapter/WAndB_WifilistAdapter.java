@@ -2,6 +2,7 @@ package com.ost.jay.settings.adapter;
 
 import android.app.Activity;
 import android.net.wifi.ScanResult;
+import android.net.wifi.WifiManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,6 +19,8 @@ public class WAndB_WifilistAdapter extends BaseAdapter {
     private final List<ScanResult> scanResults;
     private Viewholder viewholder;
     private final Activity context;
+
+    int wifi_level [] =new int[]{R.drawable.wifi_1,R.drawable.wifi_2,R.drawable.wifi_3,R.drawable.network_state_on};
 
     public WAndB_WifilistAdapter(Activity context, List<ScanResult> scanResults) {
         inflater = LayoutInflater.from(context);
@@ -49,11 +52,13 @@ public class WAndB_WifilistAdapter extends BaseAdapter {
             viewholder = new Viewholder();
             convertView= inflater.inflate(R.layout.wandb_wifilist_item, null);
             viewholder.wifiName = (TextView) convertView.findViewById(R.id.wannb_wifilist_item_wifiname);
+            viewholder.wifiImage= (ImageView) convertView.findViewById(R.id.item_wifi_img);
             convertView.setTag(viewholder);
         } else {
             viewholder = (Viewholder) convertView.getTag();
         }
         viewholder.wifiName.setText(scanResults.get(position).SSID);
+        viewholder.wifiImage.setImageResource(wifi_level[WifiManager.calculateSignalLevel(scanResults.get(position).level, 4)]);
         viewholder.arrowTop = (ImageView) context.findViewById(R.id.wifi_arrowtop);
         viewholder.arrowBottom = (ImageView) context.findViewById(R.id.wifi_arrowbottom);
         if (position == scanResults.size() - 1) {
@@ -68,5 +73,7 @@ public class WAndB_WifilistAdapter extends BaseAdapter {
         public TextView wifiName;
         public ImageView arrowTop;
         public ImageView arrowBottom;
+        public ImageView wifiImage;
     }
+
 }

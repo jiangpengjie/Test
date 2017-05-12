@@ -10,9 +10,9 @@ import android.widget.ImageButton;
 import com.ost.jay.settings.BaseActivity;
 import com.ost.jay.settings.R;
 import com.ost.jay.settings.features.about.SettingAboutActivity;
+import com.ost.jay.settings.features.displayandsounds.SettingDisplay_SoundsActivity;
 import com.ost.jay.settings.features.language.LanguageActivity;
 import com.ost.jay.settings.features.netsetting.SettingNetActivity;
-import com.ost.jay.settings.features.speedtest.SpeedTestActivity;
 
 public class MainActivity extends BaseActivity implements View.OnClickListener {
 
@@ -114,7 +114,8 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                 startActivity(jumpIntent);
                 break;
             case R.id.setting_net_speed:
-                jumpIntent = new Intent(this, SpeedTestActivity.class);
+//                jumpIntent = new Intent(this, SpeedTestActivity.class);
+                jumpIntent = new Intent(this, SettingDisplay_SoundsActivity.class);
 //                jumpIntent = new Intent(Settings.ACTION_DISPLAY_SETTINGS);
                 startActivity(jumpIntent);
                 break;

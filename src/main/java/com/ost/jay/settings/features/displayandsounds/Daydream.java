@@ -16,4 +16,5 @@ public class Daydream extends Activity{
         getFragmentManager().beginTransaction().add(R.id.prefs,new DaydreamPrefsFragment()).commit();
 
     }
+
 }
