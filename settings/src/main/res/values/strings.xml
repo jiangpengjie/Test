@@ -15,5 +15,25 @@
  <string name="ethernet_setting">有线网络设置</string>
  <string name="ethernet_status">已连接无线网络，若连接有线请插好网线</string>
  <string name="screen_timeout_summary"><xliff:g id="timeout_description">%1$s</xliff:g> </string>
-    
+ <string name="screensaver_settings_title">互动屏保</string>
+ <string name="switch_on_text">On</string>
+ <string name="switch_off_text">Off</string>
+ <string name="screensaver_settings_button">Settings</string>
+ <string name="screensaver_settings_summary_off">Off</string>
+ <string name="screensaver_settings_when_to_dream">When to daydream</string>
+ <string name="screensaver_settings_dream_start">Start now</string>
+ <string name="screensaver_settings_disabled_prompt">To control what happens when the phone is docked and/or sleeping, turn Daydream on.</string>
+ <string name="screensaver_settings_summary_either_short">Either</string>
+ <!-- Display settings screen, summary fragment for screen saver options, activated when asleep and charging -->
+ <string name="screensaver_settings_summary_sleep">While charging</string>
+ <!-- Display settings screen, summary fragment for screen saver options, activated when docked  -->
+ <string name="screensaver_settings_summary_dock">While docked</string>
+ <string name="oobe_screen_tips">Press UP or DOWN arrow keys on your remote,  until the white borders appear on the edge of TV screen</string>
+
+ <string name="title_font_size">Font size</string>
+ <string name="summary_font_size" translatable="false">%1$s</string>
+ <string name="dialog_title_font_size">Font size</string>
+ <string name="keywords_display_font_size">text size</string>
+ <string name="global_font_change_title">Change font size</string>
+
 </resources>

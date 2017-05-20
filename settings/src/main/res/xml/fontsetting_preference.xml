@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen
-    android:key="font_list"
+<PreferenceScreen android:key="font_list"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="Screen resolution"
-   >
+    >
 
-    <ListPreference
-        android:key="fontListPreference"
-        android:title="Font size"
-        android:entries="@array/font_size_entries"
-        android:entryValues="@array/font_size_values"
-        android:defaultValue="normal">
-
-    </ListPreference>
+    <com.ost.jay.settings.widget.WarnedListPreference
+        android:key="font_size"
+        android:title="@string/title_font_size"
+        android:summary="@string/summary_font_size"
+        android:entries="@array/entries_font_size"
+        android:entryValues="@array/entryvalues_font_size"
+        android:dialogTitle="@string/dialog_title_font_size"
+        />
 
 
 </PreferenceScreen> 

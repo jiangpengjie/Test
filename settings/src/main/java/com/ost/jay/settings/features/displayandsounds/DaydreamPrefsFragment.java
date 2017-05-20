@@ -31,6 +31,7 @@ public class DaydreamPrefsFragment extends PreferenceFragment implements
     private static final int FALLBACK_SCREEN_TIMEOUT_VALUE = 1800000;
 
     private static final String KEY_SCREEN_TIMEOUT = "screen_timeout";
+    private static final String KEY_SCREEN_SAVER = "screensaver";
 
     private ContentResolver mContentResolver;
     private ListPreference mScreenTimeoutPreference;
@@ -45,16 +46,18 @@ public class DaydreamPrefsFragment extends PreferenceFragment implements
 
         addPreferencesFromResource(R.xml.daydream_preference);
 
+     ///////////关于系统休眠//////////////////////////////////////////////////////////
         mScreenTimeoutPreference = (ListPreference) findPreference(KEY_SCREEN_TIMEOUT);
         final long currentTimeout = Settings.System.getLong(resolver, SCREEN_OFF_TIMEOUT,
                 FALLBACK_SCREEN_TIMEOUT_VALUE);
         mScreenTimeoutPreference.setValue(String.valueOf(currentTimeout));
         mScreenTimeoutPreference.setOnPreferenceChangeListener(this);
-
         //更新休眠时间列表
         disableUnusableTimeouts(mScreenTimeoutPreference);
         //修改值之后，更新summary的信息
         updateTimeoutPreferenceDescription(currentTimeout);
+     //////////////////////////////////////////////////////////////////////////////
+
 
     }
 

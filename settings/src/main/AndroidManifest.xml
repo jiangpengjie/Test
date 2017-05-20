@@ -76,10 +76,8 @@
 
         <activity android:name=".features.displayandsounds.SettingDisplay_SoundsActivity"/>
             <activity android:name=".features.displayandsounds.Resolution"/>
-            <activity android:name=".features.displayandsounds.Rotation"/>
+            <activity android:name=".features.displayandsounds.position"/>
             <activity android:name=".features.displayandsounds.Daydream"/>
-            <activity android:name=".features.displayandsounds.HDR"/>
-            <activity android:name=".features.displayandsounds.SystemSounds"/>
 
         <activity android:name=".features.language.LanguageActivity"
             android:configChanges="locale"/>

@@ -16,5 +16,6 @@ public class FontSetting extends Activity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.display_bg);
         getFragmentManager().beginTransaction().add(R.id.prefs,new FontSettingPrefsFragment()).commit();
+
     }
 }

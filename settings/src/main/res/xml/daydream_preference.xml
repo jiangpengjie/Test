@@ -3,26 +3,32 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="Screen resolution"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <ListPreference
-        android:key="daydreamListPreference"
-        android:title="互动屏保"
-        android:summary="时钟"
-        android:entries="@array/daydream_entries"
-        android:entryValues="@array/daydream_values"
-        android:dialogTitle="互动屏保"
-        android:defaultValue="时钟"
-        >
-    </ListPreference>
-    <ListPreference
-        android:key="screen_saver_ListPreference"
-        android:title="何时启动互动屏保"
-        android:summary="闲置null后"
-        android:entries="@array/screen_saver_entries"
-        android:entryValues="@array/screen_saver_values"
-        android:dialogTitle="何时启动互动屏保"
-        android:defaultValue="1800000"
-        >
-    </ListPreference>
+
+
+    <!--<PreferenceScreen-->
+        <!--android:key="screensaver"-->
+        <!--android:title="@string/screensaver_settings_title"-->
+        <!--android:fragment="com.android.settings.DreamSettings" />-->
+    <!--<ListPreference-->
+        <!--android:key="daydreamListPreference"-->
+        <!--android:title="互动屏保"-->
+        <!--android:summary="时钟"-->
+        <!--android:entries="@array/daydream_entries"-->
+        <!--android:entryValues="@array/daydream_values"-->
+        <!--android:dialogTitle="互动屏保"-->
+        <!--android:defaultValue="时钟"-->
+        <!--&gt;-->
+    <!--</ListPreference>-->
+    <!--<ListPreference-->
+        <!--android:key="screen_saver_ListPreference"-->
+        <!--android:title="何时启动互动屏保"-->
+        <!--android:summary="闲置null后"-->
+        <!--android:entries="@array/screen_saver_entries"-->
+        <!--android:entryValues="@array/screen_saver_values"-->
+        <!--android:dialogTitle="何时启动互动屏保"-->
+        <!--android:defaultValue="1800000"-->
+        <!--&gt;-->
+    <!--</ListPreference>-->
     <ListPreference
         android:key="screen_timeout"
         android:title="何时休眠"
@@ -34,8 +40,8 @@
         >
         <!--android:defaultValue="-1"-->
     </ListPreference>
-    <Preference
-        android:key="daydream_start_now"
-        android:title="现在启动">
-    </Preference>
+    <!--<Preference-->
+        <!--android:key="daydream_start_now"-->
+        <!--android:title="现在启动">-->
+    <!--</Preference>-->
 </PreferenceScreen> 

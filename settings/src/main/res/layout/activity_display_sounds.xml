@@ -29,26 +29,13 @@
         android:textColor="@color/white"
         android:layout_toRightOf="@id/button_rotation"
         android:id="@+id/button_daydream" />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="HDR"
-        android:textColor="@color/white"
-        android:layout_toRightOf="@id/button_daydream"
-        android:id="@+id/button_hdr" />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="系统声音"
-        android:textColor="@color/white"
-        android:layout_toRightOf="@id/button_hdr"
-        android:id="@+id/button_system_sounds" />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="字体设置"
         android:textColor="@color/white"
-        android:layout_toRightOf="@id/button_system_sounds"
+        android:layout_toRightOf="@id/button_daydream"
         android:id="@+id/button_fontsetting" />
 
     
