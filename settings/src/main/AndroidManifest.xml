@@ -78,6 +78,7 @@
             <activity android:name=".features.displayandsounds.Resolution"/>
             <activity android:name=".features.displayandsounds.position"/>
             <activity android:name=".features.displayandsounds.Daydream"/>
+            <activity android:name=".features.displayandsounds.FontSetting"/>
 
         <activity android:name=".features.language.LanguageActivity"
             android:configChanges="locale"/>

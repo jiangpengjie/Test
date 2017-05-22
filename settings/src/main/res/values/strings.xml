@@ -36,4 +36,9 @@
  <string name="keywords_display_font_size">text size</string>
  <string name="global_font_change_title">Change font size</string>
 
+ <string name="font_size_small">small</string>
+ <string name="font_size_normal">normal</string>
+ <string name="font_size_large">large</string>
+ <string name="font_size_huge">huge</string>
+
 </resources>

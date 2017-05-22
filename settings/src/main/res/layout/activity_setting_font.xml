@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+
+     <RadioGroup
+         android:id="@+id/font_group"
+         android:paddingTop="30dp"
+         android:gravity="center"
+         android:orientation="horizontal"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/font_size_small"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:id="@+id/font_small_radioButton" />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/font_size_normal"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:id="@+id/font_normal_radioButton" />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/font_size_large"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:id="@+id/font_large_radioButton" />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/font_size_huge"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:id="@+id/font_huge_radioButton" />
+
+     </RadioGroup>
+
+
+
+</LinearLayout>
