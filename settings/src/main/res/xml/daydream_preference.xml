@@ -31,12 +31,12 @@
     <!--</ListPreference>-->
     <ListPreference
         android:key="screen_timeout"
-        android:title="何时休眠"
+        android:title="@string/screen_timeout_title"
         android:summary="@string/screen_timeout_summary"
         android:persistent="false"
         android:entries="@array/screen_timeout_entries"
         android:entryValues="@array/screen_timeout_values"
-        android:dialogTitle="何时休眠"
+        android:dialogTitle="@string/screen_timeout_title"
         >
         <!--android:defaultValue="-1"-->
     </ListPreference>

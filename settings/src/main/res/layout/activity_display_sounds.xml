@@ -10,14 +10,14 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="屏幕分辨率"
+        android:text="@string/screen_resolution"
         android:textColor="@color/white"
         android:id="@+id/button_resolution" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="屏幕旋转"
+        android:text="@string/screen_position"
         android:textColor="@color/white"
         android:layout_toRightOf="@id/button_resolution"
         android:id="@+id/button_rotation" />
@@ -25,7 +25,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="屏幕休眠"
+        android:text="@string/scrren_sleep"
         android:textColor="@color/white"
         android:layout_toRightOf="@id/button_rotation"
         android:id="@+id/button_daydream" />
@@ -33,7 +33,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="字体设置"
+        android:text="@string/font_setting"
         android:textColor="@color/white"
         android:layout_toRightOf="@id/button_daydream"
         android:id="@+id/button_fontsetting" />

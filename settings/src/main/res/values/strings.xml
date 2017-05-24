@@ -7,27 +7,23 @@
  <string name="kernel_version">Kernel version :</string>
  <string name="build_number">Build number : </string>
  <string name="about">About Box</string>
- <string name="internet_setting">网络设置</string>
- <string name="wifi">无线网络</string>
- <string name="wifi_open">打开Wifi</string>
- <string name="wifi_close">关闭Wifi</string>
- <string name="ethernet">有线网络</string>
- <string name="ethernet_setting">有线网络设置</string>
- <string name="ethernet_status">已连接无线网络，若连接有线请插好网线</string>
+ <string name="internet_setting">Net Settings</string>
+ <string name="wifi">Wifi</string>
+ <string name="wifi_open">Open Wifi</string>
+ <string name="wifi_close">Close Wifi</string>
+ <string name="ethernet">Ethernet</string>
+ <string name="ethernet_setting">Ethernet settings</string>
+ <string name="ethernet_status">Connect to the wireless network, if connecting cable, please plug in the network line</string>
  <string name="screen_timeout_summary"><xliff:g id="timeout_description">%1$s</xliff:g> </string>
- <string name="screensaver_settings_title">互动屏保</string>
+ <string name="screen_timeout_title">When to sleep</string>
  <string name="switch_on_text">On</string>
  <string name="switch_off_text">Off</string>
- <string name="screensaver_settings_button">Settings</string>
- <string name="screensaver_settings_summary_off">Off</string>
- <string name="screensaver_settings_when_to_dream">When to daydream</string>
- <string name="screensaver_settings_dream_start">Start now</string>
- <string name="screensaver_settings_disabled_prompt">To control what happens when the phone is docked and/or sleeping, turn Daydream on.</string>
- <string name="screensaver_settings_summary_either_short">Either</string>
- <!-- Display settings screen, summary fragment for screen saver options, activated when asleep and charging -->
- <string name="screensaver_settings_summary_sleep">While charging</string>
- <!-- Display settings screen, summary fragment for screen saver options, activated when docked  -->
- <string name="screensaver_settings_summary_dock">While docked</string>
+ <string name="screen_resolution_best">Auto switch to best resolution</string>
+ <string name="screen_resolution">Screen resolution</string>
+ <string name="screen_resolution_selection">Screen resolution selection</string>
+ <string name="screen_position">Screen position</string>
+ <string name="scrren_sleep">Sleep</string>
+ <string name="font_setting">Font settings</string>
  <string name="oobe_screen_tips">Press UP or DOWN arrow keys on your remote,  until the white borders appear on the edge of TV screen</string>
 
  <string name="title_font_size">Font size</string>
@@ -40,5 +36,7 @@
  <string name="font_size_normal">normal</string>
  <string name="font_size_large">large</string>
  <string name="font_size_huge">huge</string>
+
+ <string name="display_filter_outputmode"></string>
 
 </resources>

@@ -21,27 +21,6 @@
 	  <item>1080i-50hz</item> 
 	  <item>1080i-60hz</item> 
 	</string-array>
-	<!--旋转数组-->
-	<string-array name="rotation_entries">
-		<item>横屏居中</item>
-		<item>横屏拉伸</item>
-		<item>保持原样</item>
-	</string-array>
-	<string-array name="rotation_values">
-		<item>横屏居中</item>
-		<item>横屏拉伸</item>
-		<item>保持原样</item>
-	</string-array>
-
-	<!--屏保选项数组-->
-	<string-array name="daydream_entries">
-		<item>时钟</item>
-		<item>彩虹</item>
-	</string-array>
-	<string-array name="daydream_values">
-		<item>时钟</item>
-		<item>彩虹</item>
-	</string-array>
 
 	<!-- Display settings.  The delay in inactivity before the daydream starts. -->
 	<!--屏保时间数组-->
@@ -66,6 +45,8 @@
 		<!-- Do not translate. -->
 		<item>3600000</item>
 	</string-array>
+
+	<!--休眠时间数组-->
 	<!-- Display settings.  The delay in inactivity before the screen is turned off. These are shown in a list dialog. -->
 	<string-array name="screen_timeout_entries">
 		<item>15 seconds</item>
@@ -96,18 +77,6 @@
 		<item>1800000</item>
 		<!-- Do not translate. -->
 		<item>864000000</item>
-	</string-array>
-
-	<!--屏保选项数组-->
-	<string-array name="hdr_entries">
-		<item>自动</item>
-		<item>开启</item>
-		<item>关闭</item>
-	</string-array>
-	<string-array name="hdr_values">
-		<item>自动</item>
-		<item>开启</item>
-		<item>关闭</item>
 	</string-array>
 
 	<!--字体设置数组-->

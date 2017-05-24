@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <CheckBoxPreference
             android:key="auto_resolution"
-            android:title="自动匹配最佳分辨率"
+            android:title="@string/screen_resolution_best"
             android:summaryOn="on"
             android:summaryOff="off"
             android:defaultValue="true"
@@ -13,10 +13,10 @@
     </CheckBoxPreference>
     <ListPreference
             android:key="resolutionListPreference"
-            android:title="屏幕分辨率选择"
+            android:title="@string/screen_resolution_selection"
             android:entries="@array/list_entries"
             android:entryValues="@array/list_entries_values"
-            android:dialogTitle="屏幕分辨率"
+            android:dialogTitle="@string/screen_resolution_selection"
             android:defaultValue="1080p-60hz"
             >
     </ListPreference>
