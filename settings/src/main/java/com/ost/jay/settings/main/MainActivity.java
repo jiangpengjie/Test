@@ -1,8 +1,8 @@
 package com.ost.jay.settings.main;
 
+import android.content.ComponentName;
 import android.content.Intent;
 import android.os.Bundle;
-import android.provider.Settings;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.ImageButton;
@@ -85,6 +85,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     public void onClick(View view) {
 
         Intent jumpIntent;
+        ComponentName comp;
         switch (view.getId()) {
             case R.id.setting_about:
                 jumpIntent = new Intent(this, SettingAboutActivity.class);
@@ -93,7 +94,13 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                 break;
             case R.id.setting_more:
                 try {
-                    jumpIntent = new Intent(Settings.ACTION_SETTINGS);
+//                    jumpIntent = new Intent(Settings.ACTION_SETTINGS);
+//                    startActivity(jumpIntent);
+                    jumpIntent = new Intent();
+                    jumpIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    comp = new ComponentName("com.android.settings", "com.android.settings.SETTINGS");
+                    jumpIntent.setComponent(comp);
+                    jumpIntent.setAction("android.intent.action.VIEW");
                     startActivity(jumpIntent);
                 } catch (Exception e) {
                     e.printStackTrace();
@@ -102,7 +109,12 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
             case R.id.setting_file:
 //                jumpIntent = new Intent(this, SettingFileActivity.class);
 //                jumpIntent = new Intent(this, SettingDisplay_SoundsActivity.class);
-                jumpIntent=new Intent(Settings.ACTION_INTERNAL_STORAGE_SETTINGS);
+//                jumpIntent=new Intent(Settings.ACTION_INTERNAL_STORAGE_SETTINGS);
+                jumpIntent = new Intent();
+                jumpIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                comp = new ComponentName("com.droidlogic.FileBrower", "com.droidlogic.FileBrower.FileBrower");
+                jumpIntent.setComponent(comp);
+                jumpIntent.setAction("android.intent.action.VIEW");
                 startActivity(jumpIntent);
                 break;
             case R.id.setting_update:

@@ -12,7 +12,7 @@
             >
     </CheckBoxPreference>
     <ListPreference
-            android:key="resolutionListPreference"
+            android:key="screen_resolution "
             android:title="@string/screen_resolution_selection"
             android:entries="@array/list_entries"
             android:entryValues="@array/list_entries_values"

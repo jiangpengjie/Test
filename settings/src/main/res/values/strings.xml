@@ -38,5 +38,10 @@
  <string name="font_size_huge">huge</string>
 
  <string name="display_filter_outputmode"></string>
+ <string name="display_self_setting">HDMI Output Mode Setting :</string>
+ <string name="display_self_setting_value">self select:(HDMI 1080I 50HZ)</string>
+ <string name="display_auto">HDMI auto-detection</string>
+ <string name="display_auto_value">auto setting by system </string>
+ <string name="output_popup_window_title">Output Modes</string>
 
 </resources>

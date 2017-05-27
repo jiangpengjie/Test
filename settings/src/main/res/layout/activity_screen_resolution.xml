@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/settingsContentLayout_02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="240dp"
+        android:layout_marginRight="240dp"
+        android:orientation="vertical">
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/secreen_auto"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:background="@drawable/setlect_white_focus"-->
+            <!--android:clickable="true"-->
+            <!--android:focusable="true"-->
+            <!--android:nextFocusLeft="@id/secreen_auto"-->
+            <!--android:nextFocusRight="@id/secreen_auto"-->
+            <!--android:orientation="vertical"-->
+            <!--android:paddingLeft="20dp"-->
+            <!--android:paddingRight="20dp" >-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/auto_set_screen"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="fill_parent"-->
+                <!--android:focusable="true"-->
+                <!--android:clickable="true"-->
+                <!--android:drawableRight="@drawable/on"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:text="@string/display_auto"-->
+                <!--android:textColor="@android:color/white"-->
+                <!--android:textSize="22dp"-->
+                <!--android:textStyle="bold" />-->
+        <!--</LinearLayout>-->
+
+        <LinearLayout
+            android:id="@+id/screen_self_set"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/setlect_white_focus"
+            android:clickable="true"
+            android:focusable="true"
+            android:nextFocusLeft="@id/screen_self_set"
+            android:nextFocusRight="@id/screen_self_set"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:id="@+id/self_select_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:text="@string/display_self_setting"
+                android:textColor="@android:color/white"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/current_mode_value"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="@string/display_self_setting_value"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

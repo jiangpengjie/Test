@@ -77,8 +77,10 @@ public class SettingDisplay_SoundsActivity extends BaseActivity implements View.
     	Intent jumpIntent;
     	switch (view.getId()) {
 			case R.id.button_resolution:
-				jumpIntent = new Intent(SettingDisplay_SoundsActivity.this,Resolution.class);
+//				jumpIntent = new Intent(SettingDisplay_SoundsActivity.this,Resolution.class);
+				jumpIntent = new Intent(SettingDisplay_SoundsActivity.this,ScreenResolution.class);
 				startActivity(jumpIntent);
+
 				break;
 			case R.id.button_rotation:
 				jumpIntent = new Intent(SettingDisplay_SoundsActivity.this,position.class);
