@@ -3,6 +3,7 @@ package com.ost.jay.settings.main;
 import android.content.ComponentName;
 import android.content.Intent;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.ImageButton;
@@ -94,14 +95,14 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                 break;
             case R.id.setting_more:
                 try {
-//                    jumpIntent = new Intent(Settings.ACTION_SETTINGS);
-//                    startActivity(jumpIntent);
-                    jumpIntent = new Intent();
-                    jumpIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                    comp = new ComponentName("com.android.settings", "com.android.settings.SETTINGS");
-                    jumpIntent.setComponent(comp);
-                    jumpIntent.setAction("android.intent.action.VIEW");
+                    jumpIntent = new Intent(Settings.ACTION_SETTINGS);
                     startActivity(jumpIntent);
+//                    jumpIntent = new Intent();
+//                    jumpIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+//                    comp = new ComponentName("com.android.settings", "com.android.settings.MainSettings");
+//                    jumpIntent.setComponent(comp);
+//                    jumpIntent.setAction("android.intent.action.VIEW");
+//                    startActivity(jumpIntent);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
