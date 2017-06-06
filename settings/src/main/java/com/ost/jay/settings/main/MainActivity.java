@@ -3,6 +3,7 @@ package com.ost.jay.settings.main;
 import android.content.ComponentName;
 import android.content.Intent;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.ImageButton;
@@ -12,7 +13,6 @@ import com.ost.jay.settings.R;
 import com.ost.jay.settings.features.about.SettingAboutActivity;
 import com.ost.jay.settings.features.displayandsounds.SettingDisplay_SoundsActivity;
 import com.ost.jay.settings.features.language.LanguageActivity;
-import com.ost.jay.settings.features.netsetting.SettingNetActivity;
 
 public class MainActivity extends BaseActivity implements View.OnClickListener {
 
@@ -122,7 +122,8 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                 startActivity(jumpIntent);
                 break;
             case R.id.setting_net:
-                jumpIntent = new Intent(this, SettingNetActivity.class);
+//                jumpIntent = new Intent(this, SettingNetActivity.class);
+                jumpIntent=new Intent(Settings.ACTION_MANAGE_ALL_APPLICATIONS_SETTINGS);
                 startActivity(jumpIntent);
                 break;
             case R.id.setting_net_speed:

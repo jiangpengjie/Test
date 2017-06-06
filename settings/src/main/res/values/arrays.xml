@@ -75,8 +75,8 @@
 		<item>600000</item>
 		<!-- Do not translate. -->
 		<item>1800000</item>
-		<!-- Do not translate. -->
-		<item>10000000000000000</item>
+
+		<item>2000000000</item>
 	</string-array>
 
 	<!--字体设置数组-->

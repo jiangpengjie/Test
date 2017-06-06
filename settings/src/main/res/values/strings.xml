@@ -14,7 +14,7 @@
  <string name="ethernet">Ethernet</string>
  <string name="ethernet_setting">Ethernet settings</string>
  <string name="ethernet_status">Connect to the wireless network, if connecting cable, please plug in the network line</string>
- <string name="screen_timeout_summary">After <xliff:g id="timeout_description">%1$s</xliff:g> of inactivity</string>
+ <string name="screen_timeout_summary"><xliff:g id="timeout_description">%1$s</xliff:g> </string>
  <string name="screen_timeout_title">When to sleep</string>
  <string name="switch_on_text">On</string>
  <string name="switch_off_text">Off</string>
